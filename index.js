@@ -42,7 +42,7 @@ app.get('/posts', (req, res) => {
 
 app.post('/posts', (req, res) => {
 
-    let _username = req.body.usernames
+    let _username = req.body.username
     let _message = req.body.message
 
     let posts = db.get('posts')
