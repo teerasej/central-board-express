@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-// const db = require('monk')('localhost/mydb')
-const db = require('monk')('mongodb://admin:54321@ds249418.mlab.com:49418/heroku_ccjhg566')
+const db = require('monk')(process.env.MONGOLAB_URI || 'localhost/mydb')
 
 
 const app = express()
