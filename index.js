@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+console.log('MongoLab URI: ' + process.env.MONGOLAB_URI)
 const db = require('monk')(process.env.MONGOLAB_URI || 'localhost/mydb')
 
 
